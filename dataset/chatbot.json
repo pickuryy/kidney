@@ -1,0 +1,223 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hallo",
+        "hai",
+        "halo",
+        "hei",
+        "hi",
+        "hy",
+        "pagi",
+        "morning",
+        "siang",
+        "afternoon",
+        "sore",
+        "malam",
+        "bro",
+        "sis",
+        "kawan"
+      ],
+      "responses": [
+        "Hai! Kidneybot di sini. Ada yang bisa saya bantu?",
+        "Halo! Saya Kidneybot, salam kenal ya! Ada yang bisa saya bantu?",
+        "Helo! Ini Kidneybot, ada yang bisa saya bantu?"
+      ]
+    },
+    {
+      "tag": "kidneybot",
+      "patterns": [
+        "Apa itu Kidneybot?",
+        "Siapa Kidneybot?",
+        "Apa tugasmu?",
+        "Apa itu kidneybot?",
+        "Siapa kidneybot?"
+      ],
+      "responses": [
+        "Kidneybot adalah aplikasi chatbot informasi tentang penyakit ginjal yang dimulai dari pengertian, gejala awal, stadium tingkatan, dan pencegahannya!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Dah",
+        "Dadah",
+        "Bye",
+        "Byee",
+        "Good bye",
+        "Selamat tinggal",
+        "Sampai jumpa",
+        "Bai",
+        "See you", 
+        "terima kasih",
+        "makasih"
+      ],
+      "responses": [
+        "Terima kasih!",
+        "Sampai jumpa lagi!",
+        "See u! Senang bisa membantu"
+      ]
+    },
+    
+    {
+      "tag": "penjelasan_penyakit_ginjal",
+      "patterns": [
+        "Apa itu Penyakit Ginjal?",
+        "Apa yang dimaksud dengan sakit ginjal?",
+        "Apa yang sebenarnya terjadi pada ginjal yang sakit?",
+        "Apa yang dimaksud dengan masalah ginjal?",
+        "Apa yang bisa kita ketahui tentang gangguan ginjal?"
+      ],
+      "responses": [
+        "Gagal ginjal kronis adalah suatu proses patofisiologis dengan etiologi yang beragam, yang mengakibatkan penurunan fungsi ginjal yang progresif, dan pada umumnya berakhir dengan gagal ginjal.  Gagal ginjal merupakan suatu keadaan klinis yang ditandai dengan menurunnya fungsi ginjal yang bersifat irreversible, dan memerlukan terapi pengganti ginjal yaitu berupa dialisis atau transplantasi ginjal."
+      ]
+    },
+    {
+      "tag": "stadium_ginjal_kronis",
+      "patterns": [
+        "Bagaimana tingkatan dari penyakit ginjal kronis?",
+        "Ada berapa tingkatan penyakit ginjal kronis?",
+        "Ada berapa tingkatan stadium ginjal kronis?",
+        "Apa saja level kondisi penyakit ginjal kronis yang umum?",
+        "Jelaskan tingkatan stadium dari penyakit ginjal kronis!",
+        "Ada berapa stadium penyakit ginjal kronis yang harus diketahui?",
+        "stadium",
+        "tingkatan",
+        "tingkatannya",
+        "tingkat",
+        "berapa",
+        "ada berapa tingkatannya"
+      ],
+      "responses": [
+        "Terdapat 5 stadium dari penyakit ginjal kronis yaitu:\nStadium 1: Kerusakan Ginjal dengan Fungsi Ginjal Normal\nStadium 2: Sedikit Penurunan Fungsi Ginjal\nStadium 3: Kerusakan Ginjal Moderat\nStadium 4: Kerusakan Ginjal Berat\nStadium 5: Gagal Ginjal\n\nMemahami stadium penyakit ginjal kronis membantu dalam menargetkan intervensi pada waktu yang tepat untuk memperlambat progresi penyakit dan mempertahankan kualitas hidup pasien. Pendidikan pasien tentang gejala dan pengelolaan penyakit, serta keterlibatan aktif dalam pengobatan mereka, adalah kunci untuk mengelola penyakit ginjal kronis secara efektif."
+      ]
+    },
+    {
+      "tag": "tanda_ginjal_kronis",
+      "patterns": [
+        "Apa saja Tanda dan Gejala Penyakit Ginjal Kronis?",
+        "Apa saja ciri-ciri dan gejala yang dapat mengindikasikan adanya penyakit ginjal kronis?",
+        "Bagaimana cara mengidentifikasi tanda-tanda dan gejala dari penyakit ginjal kronis?", 
+        "Apa saja indikasi dari Penyakit Ginjal Kronis?",
+        "Apa saja isyarat dan gejala yang dapat mengindikasikan adanya penyakit ginjal kronis?",
+        "Bagaimana cara mengidentifikasi indikasi dan gejala dari penyakit ginjal kronis?",
+        "Apa gejala penyakit ginjal kronis yang umum?",
+        "Apa yang bisa menjadi tanda adanya penyakit ginjal kronis?",
+        "Bagaimana ciri-ciri penyakit ginjal kronis?",
+        "Apa yang menjadi tanda-tanda penyakit ginjal kronis?",
+        "gejala",
+        "tanda",
+        "ciri",
+        "indikasi",
+        "isyarat",
+        "gejalanya",
+        "tandanya",
+        "cirinya",
+        "indikasinya",
+        "isyaratnya"
+      ],
+      "responses": [
+        "10 Tanda Peringatan Dini Penyakit Ginjal Kronis:\n1. Mudah lelah dan lemas\n2. Pembengkakan kaki, pergelangan kaki, dan wajah\n3. Sering buang air kecil\n4. Urin berbusa dan perubahan warna urin\n5. Nyeri punggung Bawah\n6. Kehilangan nafsu makan\n7. Mual dan muntah\n8. Kulit kering dan gatal\n9. Kesulitan bernafas\n10. Tekanan darah tinggi\n\nPenting untuk diingat:\nTidak semua orang dengan penyakit ginjal kronis akan mengalami semua tanda peringatan dini ini. Beberapa kondisi medis lain juga dapat menyebabkan gejala yang mirip dengan penyakit ginjal kronis."
+      ]
+    },
+    {
+      "tag": "menjaga_kesehatan_ginjal",
+      "patterns": [
+        "Bagaimana cara menjaga kesehatan ginjal?",
+	      "Apa yang harus dilakukan untuk menjaga ginjal tetap sehat?",
+	      "Bagaimana caranya menjaga agar ginjal tetap baik?",
+        "Apa yang bisa dilakukan agar ginjal tetap sehat?",
+        "Apa yang perlu dilakukan agar ginjal tetap sehat?",
+        "Apa yang bisa dilakukan untuk merawat ginjal?",
+        "Apa yang bisa dilakukan untuk menjaga ginjal tetap baik?",
+        "Bagaimana cara menjaga agar ginjal berfungsi dengan baik?",
+        "jaga",
+        "menjaga",
+        "rawat",
+        "merawat"
+      ],
+      "responses": [
+        "Tips Menjaga Kesehatan Ginjal:\n1. Menjaga pola makan sehat dan seimbang\n2. Mengontrol tekanan darah dan gula darah\n3. Menjaga berat badan ideal\n4. Berolahraga secara teratur\n5. Minum air putih yang cukup\n6. Hindari merokok\n7. Batasi konsumsi alkohol\n8. Hindari penggunaan obat-obatan berlebihan\n9. Lakukan pemeriksaan kesehatan secara rutin\n10. Menjaga tekanan darah dan kadar gula darah dalam batas normal\n\nDengan menjaga kesehatan ginjal, Anda dapat mencegah penyakit ginjal kronis dan hidup lebih sehat."
+      ]
+    },
+    {
+      "tag": "penyebab_ginjal_kronis",
+      "patterns": [
+        "Apa faktor-faktor pemicu penyakit ginjal?",
+        "Apa yang menjadi penyebab dari penyakit ginjal?",
+        "Apa yang menyebabkan seseorang mengalami penyakit ginjal?",
+        "Apa yang memicu terjadinya gangguan pada ginjal?",
+        "Apa yang bisa menjadi faktor risiko penyakit ginjal?",
+        "Bagaimana ginjal bisa terkena penyakit?",
+        "Apa yang menyebabkan gangguan fungsi ginjal?",
+        "Apa yang bisa menjadi penyebab utama penyakit ginjal?",
+        "penyebab",
+        "sebab",
+        "menyebabkan"
+      ],
+      "responses": [
+        "Berbagai kondisi medis, seperti diabetes dan tekanan darah tinggi, adalah penyebab umum dari GGK kronis, seperti:\n1. Pola makan yang tidak sehat,\n2. Kurangnya aktivitas fisik,\n3. Penggunaan obat-obatan tertentu juga dapat meningkatkan risiko terkena GGK.\n4. Faktor-faktor genetik dan gaya hidup juga turut berperan dalam perkembangan penyakit ini."	
+      ]
+    },
+    {
+      "tag": "pencegahan_penyakit_ginjal",
+      "patterns": [
+        "Bagaimana cara mencegah penyakit ginjal?",
+        "Bagaimana caranya untuk menghindari penyakit ginjal?",
+        "Apa yang perlu dilakukan untuk mencegah masalah pada ginjal?",
+        "Bagaimana cara mengurangi risiko penyakit ginjal?",
+	      "Apa yang bisa dilakukan untuk mencegah masalah ginjal?",
+        "Apa yang perlu diperhatikan untuk mencegah gangguan ginjal?",
+        "Bagaimana caranya untuk mencegah terjadinya masalah pada ginjal?",
+        "Apa langkah-langkah yang dapat diambil untuk mencegah penyakit ginjal?",
+        "pencegahan",
+        "cegah",
+        "mencegah",
+        "menghindari",
+        "tidak kena",
+        "menjauhi"
+      ],
+      "responses": [
+        "Tips agar jauh dari Gangguan Ginjal Kronis:\n1. Kendalikan Tekanan Darah dan Gula Darah\n2. Adopsi Pola Makan Sehat\n3. Tetap Aktif secara Fisik\n4. Hindari Konsumsi Alkohol dan Merokok\n5. Minum Air Secukupnya\n6.  Diet sehat\n\nDengan mengikuti langkah-langkah ini, Anda dapat mengambil langkah proaktif untuk menjaga kesehatan ginjal Anda dan mengurangi risiko terkena GGK."
+      ]
+    },
+    {
+      "tag": "mengetahu_penyakit_ginjal",
+      "patterns": [
+        "Bagaimana cara saya mengetahui apakah saya memiliki penyakit ginjal?",
+        "Bagaimana saya bisa tahu jika saya menderita penyakit ginjal?",
+        "Bagaimana cara saya memastikan apakah saya memiliki masalah kesehatan yang berkaitan dengan ginjal?",
+        "tahu",
+        "mengetahui",
+        "mencari tahu"
+      ],
+      "responses": [
+        "Apakah anda sudah melakukan tes urin dan tes darah?"
+      ]
+    },
+    {
+      "tag": "respon_sudah",
+      "patterns": [
+        "Sudah",
+        "Udah",
+        "Iya",
+        "Ya"
+      ],
+      "responses": [
+        "Silahkan ke halaman predict dan ketahui diagnose awal anda!"
+      ]
+    },
+    {
+      "tag": "respon_belum",
+      "patterns": [
+        "Belum",
+        "Blum",
+        "Belom"
+      ],
+      "responses": [
+        "Silahkan melakukan tes urin dan tes darah di klinik atau fasilitas Kesehatan terdekat!"
+      ]
+    }
+  ]
+}

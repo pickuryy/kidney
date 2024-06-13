@@ -1,0 +1,293 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hallo",
+        "hai",
+        "halo",
+        "hello",
+        "guys",
+        "ges",
+        "hei",
+        "hi",
+        "hy",
+        "pagi",
+        "good morning",
+        "siang",
+        "good afternoon",
+        "sore",
+        "good evening",
+        "malam",
+        "bro",
+        "sis",
+        "kak",
+        "dek",
+        "gan",
+        "mbak",
+        "mas",
+        "abang",
+        "eneng",
+        "assalamualaikum",
+        "punten",
+        "excuse me",
+        "mau tanya",
+        "kawan"
+      ],
+      "responses": [
+        "Hai! Decorbot di sini. Mau tau informasi tentang apa nih?",
+        "Halo! Saya Decorbot, salam kenal ya! Mau tau tentang produk laser cutting dari Perusahaan Dedecorins, kan?",
+        "Helo! Ini Decorbot. Lagi kepo tentang produk laser cutting ya?",
+        "Ada yang bisa kami bantu?",
+        "Salam hangat sobat, Kami decorbot siap membantu anda!, Mau tau Produk Laser Cutting dari Perusahaan dedecorins kan?"
+      ]
+    },
+    {
+      "tag": "respon",
+      "patterns": ["ia", "mau tau", "mau", "iya", "boleh", "jelaskan", "ia mau", "mau banget"],
+      "responses": [
+        "Dedecorins adalah perusahaan StartUp jasa laser cutting yang berfokus pada estetika ruangan baik itu di dalam maupun luar ruangan. Produknya Ada Lampu Hias Indoor, Lampu Hias Outdoor, Wall Art Decoration Indoor, Led Wall Art Decoration, Souvenir dan Marchendise"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["dah", "dadah", "bye", "byee", "goodbye", "selamat tinggal", "sampai jumpa", "Bai", "see you"],
+      "responses": ["Bye!", "Dadahh!", "Good bye!", "Dahh, semoga harimu menyenangkan yaa!", "Sampai jumpa lagi!", "See u! Senang bisa membantu"]
+    },
+    {
+      "tag": "pencipta_chabot",
+      "patterns": [
+        "Siapa pembuatmu?",
+        "DecorBot, yang buat kamu siapa sih?",
+        "Siapa yang memprogram kamu, Decorbot?",
+        "Yang membuat kamu siapa?",
+        "Diciptakan oleh siapa?",
+        "Siapa penciptamu ?",
+        "Siapa pembuatmu ?",
+        "Siapa yang menciptakanmu ?"
+      ],
+      "responses": [
+        "DecorBot diciptakan oleh mahasiswa dan mahasiswi dari program Kampus Merdeka yang memiliki ide kreatif dan inovatif, melalui program dan percobaan serta latihan sehingga membuat ku bisa hadir dan cerdas seperti saat ini",
+        "Pembuat DecorBot dari kalangan mahasiswa dan mahasiswi dari Program Kampus Merdeka!",
+        "Penciptaku berasal dari seorang mahasiswa dan mahasiswi yang kreatif, sehingga saya bisa aktif saat ini!"
+      ]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": ["Thanks", "Thank you", "Terima kasih", "Makasih", "Terima kasih banyak"],
+      "responses": ["Dengan senang hati:)"]
+    },
+    {
+      "tag": "penjelasan_dedecorins",
+      "patterns": ["Apa itu dedecorins ? ", "Dedecorins ?", "Dedecorins adalah ?", "Jelaskan dedecorins ?", "Dedecorins adalah perusahaan ?", "Dedecorins yaitu ?"],
+      "responses": [
+        "Dedecorins Company merupakan sebuah perusahaaan start up jasa laser cutting dengan lingkup home decor yang mempunyai berbagai keunggulan unik dalam berinovasi desain, bentuk, warna, serta tarif yang membuat semua kalangan bisa mendapatkan dan menikmatinya."
+      ]
+    },
+    {
+      "tag": "penjelasan_laser_cutting",
+      "patterns": ["Apa itu laser cutting ? ", "Laser cutting adalah ?", "Laser cutting ?"],
+      "responses": [
+        "Laser Cutting merupakan teknik pemotongan material tertentu memakai teknologi sinar laser dengan menggunakan program komputer khusus untuk mengontrolnya.",
+        "Laser cutting adalah suatu proses pemotongan bahan dan material tertentu yang mempunyai karakter keras dan kokoh menggunakan bantuan sinar laser yang mesinnya terhubung dengan sebuah program komputer.",
+        "Laser cutting adalah teknik memotong menggunakan sinar laser."
+      ]
+    },
+    {
+      "tag": "tujuan_dedecorins",
+      "patterns": ["Apa tujuan Dedecorins ?", "Tujuan ?", "Tujuan perusahaan ?", "Tujuan startup ?", "Apa tujuannya ?", "Tujuan Perusahaan ini apa?", "Dedecorins bertujuan untuk ?"],
+      "responses": ["Tujuan Perusahaan Dedecorins adalah untuk memberikan inovasi dan ide untuk estetika ruangan dengan media lampu baik itu dalam ruangan atau luar."]
+    },
+    {
+      "tag": "keunggulan_dedecorins",
+      "patterns": ["Apa saja keunggulan dari produk Dedecorins?", "Keunggulan ?", "Keunggulannya ?", "Kelebihannya ?", "Apa kelebihannya ?"],
+      "responses": ["Keunggulan dari produk Dedecorins sangat banyak. Salah satunya harga produk yang ditawarkan jauh lebih terjangkau dibanding produk laser cutting lainnya."]
+    },
+    {
+      "tag": "produk_dedecorins",
+      "patterns": ["Apa saja produk dedecorins?", "Apa saja produknya?", "Produknya apa aja ?", "Produk dedecorins ?", "Produknya ?", "Produk ?"],
+      "responses": [
+        "Terdapat produk yang berfungsi untuk membuat estetika ruangan baik itu di dalam maupun luar ruangan. Ada Lampu Hias Indoor, Lampu Hias Outdoor, Wall Art Decoration Indoor, Led Wall Art Decoration, Souvenir dan Marchendise",
+        "Produk : Lampu hias indoor, Lampu Hias Outdoor,Wall Art Decoration Indoor, Led Art Decoration, Souvenir dan Marchendise"
+      ]
+    },
+    {
+      "tag": "penjelasan_lampu_hias_indoor",
+      "patterns": ["Apa itu Lampu Hias Indoor ?", "Lampu hias indoor ?", "jelaskan lampu hias indoor", "indoor ?", "lampu indoor "],
+      "responses": ["Lampu hias indoor adalah sebuah produk lampu dari perusahaan Dedecorins untun membuat ruangan rumah menjadi estetik. Untuk produk lampu indoor ini ada 2 jenis yaitu : Lampu gantung & lampu hias meja"]
+    },
+    {
+      "tag": "penjelasan_lampu_hias_outdoor",
+      "patterns": ["Apa itu lampu hias outdoor", "Lampu hias outdoor ?", "jelaskan lampu hias outdoor", "outdoor ?", "lampu outdoor"],
+      "responses": ["Lampu hias Outdoor adalah sebuah produk lampu dari perusahaan Dedecorins untun membuat halaman luar rumah menjadi estetik."]
+    },
+    {
+      "tag": "penjelasan_wall_art_decoration_indoor",
+      "patterns": ["Apa itu Wall Art Decoration Indoor ? ", "Lampu wall art?", "jelaskan walk art decoration indoor", "wall art ?", "lampu wall art"],
+      "responses": ["Wall Art Decoration Indoor adalah produk lampu hias  dari perusahaan Dedecorins dengan menggunakan laser cutting, walkart ini ada 3 jenis yaitu : Path Lighting, Shadow Lighting dan Pier Mount Light."]
+    },
+    {
+      "tag": "penjelasan_souvenir",
+      "patterns": ["Apa itu Souvenir?", "Souvenir ?", "jelaskan souvenir"],
+      "responses": [
+        "Souvenir adalah berbagai macam barang kerajinan yang memiliki model, desain, ukuran, material yang bervariasi dan ciri khas tersendiri, berfungsi sebagai hadiah, cenderamata atau kenang – kenangan untuk diberikan kepada orang lain."
+      ]
+    },
+    {
+      "tag": "penjelasan_merchandise",
+      "patterns": ["Apa itu merchandise?", "marchendise", "jelaskan marchendise"],
+      "responses": [
+        "Merchandise adalah segala bentuk produk yang ditujukan sebagai hadiah. Dalam hal ini merchandise diberikan secara cuma-cuma kepada orang yang telah mengikuti atau melaksanakan kegiatan yang diwajibkan oleh produsen produk tersebut"
+      ]
+    },
+    {
+      "tag": "material",
+      "patterns": [" Material apa saja yang digunakan dalam produksi Laser Cutting?", "Bahan apa yang di gunakan ?", "material", "bahan yang digunakan", "bahan", "bahan dasar", "material yang di gunakan ?"],
+      "responses": [
+        "Material yang digunakan dalam pembuatan Laser Cutting adalah bahan yang berkualitas baik serta cocok untuk dasar pembuatan lampu hias indoor atau out door, pajangan dinding, souvenir, hampers. Material tersebut adalah plat besi galvanis, akrilik, plywood, dan kayu jati Belanda"
+      ]
+    },
+    {
+      "tag": "bahan_produk",
+      "patterns": ["Plat besi galvanis", "Akrilik", "Plywood", "kayu jati belanda"],
+      "responses": ["Mau tau bahan apa nih?"]
+    },
+    {
+      "tag": "penjelasan_besi_galvanis",
+      "patterns": [
+        "Apa itu Plat Besi Galvanis ?",
+        "Apa itu besi galvanis? ",
+        "Apa yang di maksud besi galvanis",
+        "Jelasin apa itu besi galvanis",
+        "Besi galvanis adalah?",
+        "Besi galvanis seperti apa ?",
+        "Penjelasan besi galvanis",
+        "Besi galvanis?",
+        "Apa itu besi galvanis",
+        "Plat besi galvanis"
+      ],
+      "responses": [
+        "Plat Besi Galvanis adalah bahan yang kuat dan kokoh serta di lapisi oleh galvanis. Galvanis sendiri merupakan bahan pelapis yang terbuat dari zink atau seng yang melapisi permukaan besi, baja ataupun logam lainnya. Galvanis difungsikan untuk memberi manfaat yang lebih pada logam yang dilapisinya jika dibandingkan dengan logam tanpa dilapisi galvanis. Galvanis juga membuat suatu material menjadi lebih terlindungi dari proses pengkaratan dan sangat cocok digunakan untuk produk lampu hias outdoor maupun outdoor kami, sehingga lampu hias mampu bertahan dalam jangka waktu lama. "
+      ]
+    },
+    {
+      "tag": "penggunaan_besi_galvanis",
+      "patterns": [
+        "Mengapa menggunakan besi galvanis",
+        "kenapa harus besi galvanis?",
+        "Kenapa tidak menggunakan besi yang lain?",
+        "Apa sih kelebihan dari besi galvanis ini?",
+        "Sekuat apa besi galvanis?",
+        "mengapa galvanis?",
+        "mengapa besi galvanis?"
+      ],
+      "responses": [
+        "Karena besi galvanis sangat kokoh, kuat dan tahan lama.",
+        " besi galvanis lebih tahan karat bahkan meskipun terpapar cuaca dan kondisi ekstrem. Ketahanannya tersebut menjadikannya sebagai bahan - bahan utama dalam dekorasi luar ruangan",
+        "Karena tahan karat, kuat dan kokoh",
+        "Sangat rekomendasi untuk bahan utama dekorasi lampu dari laser cutting di halaman luat/indoor"
+      ]
+    },
+    {
+      "tag": "penjelasan_akrilik",
+      "patterns": ["Akrilik", "Apa itu Akrilik ?", "Apa yang dimaksud akrilik?", "Kenapa menggunakan bahan akrilik ?", "Akrilik adalah", "Apa akrilik ?", "Jelaskan akrilik itu apa"],
+      "responses": [
+        "Akrilik adalah suatu bahan plastik polimer yang menyerupai kaca sehingga sering dipakai menjadi subtitusi kaca. Akrilik memiliki kejernihan yang lebih besar serta ukurannya juga lebih ringan daripada kaca.",
+        "(Acrylic) merupakan plastik yang menyerupai kaca, namun memiliki sifat-sifat yang membuatnya lebih unggul dari pada kaca dalam banyak cara salah satunya dari perbedaan sifatnya yaitu dari kelenturan dari akrilik (Acrylic) itu sendiri. Namun dahulu merek kelas tinggi akrilik (Acrylic) dinamakan polycast, Lucite dan Plexiglas.",
+        "(Acrylic) tidak mudah pecah, bahan ringan dan juga mudah untuk dipotong, dikikir, dibor, dihaluskan, dikilapkan dan dicat. Sebagaimana yang biasa dijadikan/ digunakan dalam berbagai hal misalnya dijadikan bingkai foto, perabotan, patung, produk display, hiasan dan lain sebagainya."
+      ]
+    },
+    {
+      "tag": "penggunaan_akrilik",
+      "patterns": ["Mengapa menggunakan akrilik?", "kenapa harus akrilik?", "Kenapa tidak menggunakan bahan lain yang sejenis?", "Apa sih kelebihan dari akrilik ini?", "Sebagus apa sih akrilik?", "kenapa akrilik?", "mengapa akrilik?"],
+      "responses": [
+        "Karena Warnanya yang tak cepat pudar dan bobotnya yang ringan menjadi keunggulan akrilik hingga menjadi bahan baku barang kerajinan",
+        " Akrilik digunakan untuk membuat berbagai produk",
+        "Karena Akrilik lebih kuat dari kaca, sehingga lebih tahan dan tidak pecah sehingga lebih lebih aman."
+      ]
+    },
+    {
+      "tag": "penjelasan_plywood",
+      "patterns": ["Seperti apa bahan plywood itu?", "Apa itu plywood?", "plywood adalah", "playwood...?"],
+      "responses": ["Material dari kayu yang praktis dan elegant, jika digunakan sebagai hiasan sebuah rumah ataupun hampers."]
+    },
+    {
+      "tag": "penggunaan_plywood",
+      "patterns": ["Apa saja manfaat dari material plywood?"],
+      "responses": ["Manfaat yang didapatkan, yaitu memiliki harga yang terjangkau, material kayu memiliki berat yang ringan, serta mudah dipasang, sehingga semua kalangan masyarakat juga dapat memilikinya."]
+    },
+    {
+      "tag": "penjelasan_kayu_jati_belanda",
+      "patterns": ["Apa itu kayu jati belanda?", "Kayu jati belanda", "Apa yang di maksud kayu jati belanda?", "Mengapa harus kayu jati belanda?", "jati belanda adalah?", "Kayu jati belanda adalah", "kayu jati belanda adalah"],
+      "responses": [
+        "Kayu Jati Belanda sebenarnya merupakan kayu Pinus yang sangat terkenal dan sangat banyak digunakan di berbagai belahan dunia karena memiliki serat atau corak tekstur kayu yang sangat bagus dan juga memiliki permukaan serat yang halus.",
+        ""
+      ]
+    },
+    {
+      "tag": "penggunaan_kayu_jati_belanda",
+      "patterns": ["Mengapa menggunakan kayu jati belanda?", "kenapa harus kayu jati belanda?", "Kenapa tidak menggunakan kayu yang lain?", "Apa sih kelebihan dari kayu jati belanda ini?", "Sebagus apa sih kayu jati belanda ini?"],
+      "responses": [
+        "Karena Harga yang relatif lebih murah Kayu jati asli dikenal dengan harga yang mahal karena memang kualitas yang ditawarkannya sangat tinggi",
+        "Bobotnya yang ringan membuat barang-barang furniture yang terbuat dari kayu ini menjadi lebih mudah saat ingin dipindahkan",
+        "Karena Daya tahan yang bagus Meskipun ringan, daya tahan kayu jati Belanda cukup baik.",
+        "Tidak berubah bentuk dan ramah lingkungan"
+      ]
+    },
+    {
+      "tag": "persyaratan_pemesanan",
+      "patterns": ["Apa persyaratan untuk memesan produk?", "apa persyaratan memesan ?"],
+      "responses": [
+        "Tidak ada persyaratan khusus. Seluruh orang dapat memesan Produk ini.",
+        "Tidak ada persyaratan khusus. Seluruh customer dari kalangan apapun, mau pelajar/mahasiswa, perusahaan, perseorangan, wedding organizer, pelaku UMKM, semua masyarakat dapat order sesuai design request ataupun melalui katalog yang sudah ada, untuk minimal pembelian atau order, bisa disesuaikan dengan ukuran, material dan durasi pengerjaan, dapat didiskusikan langsung dengan admin decorbot"
+      ]
+    },
+    {
+      "tag": "Cara_pemesanan_produk",
+      "patterns": ["Bagaimana cara melakukan pemesanan produk?", "cara memesan ?", "cara pesan ?", "cara pesannya gimana ?"],
+      "responses": ["Untuk pemesanan produk bisa dilakukan dengan menghubungi kontak yang tertera. Kemudian berikan referensi produk yang diinginkan dan lakukan konsultasi. Setelah deal, produk akan segera diproses."]
+    },
+    {
+      "tag": "Packaging_produk",
+      "patterns": ["Bagaimana produk akan dikemas?", "Bagaimana pengemasan produk ?", "pengemasannya aman?", "Bagaimana packingnya ?", "packing ?"],
+      "responses": ["Kualitas produk saat dikirimkan juga terjamin kualitas, mutu dan keamananannya. Hal ini kami lakukan dengan memberikan packaging box kayu yang kokoh dan diberikan berlembar-lembar bubble wrap."]
+    },
+    {
+      "tag": "jasa_pengiriman",
+      "patterns": ["apa saja jasa pengirimannya ?", "jasa pengiriman?", "Dikirim lewat apa ?", "Dikirim melalui apa?", "jasa pengiriman yang di gunakan ?", "menggunakan jasa pengiriman apa?", "dikirim lewat apa ?"],
+      "responses": ["Jasa kirim kami : J&T, SI Cepat, AnterAja, dan JNE"]
+    },
+    {
+      "tag": "Pengiriman produk",
+      "patterns": ["Bagaimana pengiriman produk dilakukan", "apakah pengiriman produk aman ?", "apakah dipastikan aman ?"],
+      "responses": ["Produk akan dikirim menggunakan jasa pengiriman barang yang terpercaya dan terjamin keamanannya."]
+    },
+    {
+      "tag": "manfaat",
+      "patterns": ["Apa saja manfaat atau benefit  apabila memesan di dedecorins?", "Manfaat produk ?", "Manfaat ?"],
+      "responses": ["Manfaat yang didapatkan, yaitu pastinya dngan harga yang terjangkau, dapat request design atau pola yang diinginkan, jenis produknya unik, dan juga pengiriman selalu aman dengan ekspedisi yang memaadai di kota besar "]
+    },
+    {
+      "tag": "Sosial media Dedecorins",
+      "patterns": ["Apa saja Sosial Media Dedecorins?", "kontak yang bisa dihubungi? "],
+      "responses": ["Sosial Media yang dapat diakses yaitu: Instagram: dedecorins Tiktok: dedecorins.interior Shopee: dedecorins "]
+    },
+    {
+      "tag": "laman sosial media Dedecorins",
+      "patterns": ["laman Instagram Dedecorins", "laman Tiktok Dedecorins", "laman Shopee Dedecrins"],
+      "responses": [
+        "Anda dapat mengakses akun sosial media Dedecorins pada link berikut ini. Laman akun Instagram Dedecorins https://www.instagram.com/dedecorins/Laman akun Tiktok Dedecorins https: //www.tiktok.com/@dedecorins.interior?_t=8b9L42wVvkH&_r=1Laman profil Shopee Dedecorins "
+      ]
+    },
+    {
+      "tag": "mitra_perusahaan_dedecorins",
+      "patterns": ["Siapa saja mitra yang tergabung dalam proses pengerjaan?"],
+      "responses": ["Mitra yang tergabung seperti PT Surabaya Power CNC, PT Nas Teknologi Indonesia, dan tentunya tim (mahasiswa/i dari pendiri perusahaan dedecorins)"]
+    },
+    {
+      "tag": "periode_pengerjaan_produk",
+      "patterns": ["Bagaimana periode pengerjaan produk laser cutting?", "Berapa lama pengerjaannya?", "Butuh waktu berapa?", "Estimasi berapa hari?", "Estimasi saat memesan produk?"],
+      "responses": ["Pengerjaan berlangsung selama 1 hingga 3 minggu tergantung banyaknya produk dan pola desain permintaan"]
+    }
+  ]
+}

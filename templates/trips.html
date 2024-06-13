@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Predict &mdash; Kidney Failure Prediction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../static/css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" href="../static/images/kidney.png" type="image/png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3 ">
+              <div class="site-logo">
+                <a href="/" class="font-weight-bold">
+                  <img src="../static/images/kidney.png" alt="Image" class="img-fluid" style="width: 170px; height: auto;">                </a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right">
+              
+
+              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+
+              
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li><a href="/" class="nav-link">HOME</a></li>
+                  <li><a href="about" class="nav-link">CHATBOT</a></li>
+                  <li class="active"><a href="trips" class="nav-link">PREDICT</a></li>
+                  <li><a href="blog" class="nav-link">ARTICLE</a></li>
+                  <li><a href="contact" class="nav-link">FEEDBACK</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            
+          </div>
+        </div>
+
+      </header>
+
+    <div class="ftco-blocks-cover-1">
+      <div class="site-section-cover overlay" style="background-image: url('../static/images/predict.jpg')">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-5" data-aos="fade-up">
+              <h1 class="mb-3 text-white">Prediction</h1>
+              <p>Fitur prediksi ini memberikan diagnosis awal penyakit ginjal Anda berdasarkan hasil tes darah dan urin yang Anda lakukan.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+          <div class="col-md-8">
+              <form action="/trips" method="POST">
+                <div class="form-group">
+                  <label for="age">Umur:</label>
+                  <input type="number" class="form-control" id="age" name="age" required min="1" max="100" value="{{ input_data.age if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                  <label for="blood_pressure">Tekanan darah:</label>
+                  <input type="number" class="form-control" id="blood_pressure" name="blood_pressure" required value="{{ input_data.blood_pressure if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                  <label for="urine_specific_gravity">Urine specific gravity:</label>
+                  <input type="number" class="form-control" id="urine_specific_gravity" name="urine_specific_gravity" required value="{{ input_data.urine_specific_gravity if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                  <label for="albumin">Albumin:</label>
+                  <input type="number" class="form-control" id="albumin" name="albumin" required value="{{ input_data.albumin if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                  <label for="sugar">Gula darah:</label>
+                  <input type="number" class="form-control" id="sugar" name="sugar" required value="{{ input_data.sugar if input_data else '' }}" step="0.001">
+                </div>
+                <label for="red_blood_cells">Sel darah merah:</label>
+                <select class="form-control" id="red_blood_cells" name="red_blood_cells" required>
+                    <option hidden value="">Select</option>
+                    <option value="Normal" {% if input_data and input_data.red_blood_cells == 'Normal' %}selected{% endif %}>Normal</option>
+                    <option value="Abnormal" {% if input_data and input_data.red_blood_cells == 'Abnormal' %}selected{% endif %}>Abnormal</option>
+                </select>
+                <label for="pus_cell">Sel pus:</label>
+                <select class="form-control" id="pus_cell" name="pus_cell" required>
+                    <option hidden value="">Select</option>
+                    <option value="Normal" {% if input_data and input_data.pus_cell == 'Normal' %}selected{% endif %}>Normal</option>
+                    <option value="Abnormal" {% if input_data and input_data.pus_cell == 'Abnormal' %}selected{% endif %}>Abnormal</option>
+                </select>
+                <label for="pus_cell_clumps">Terdapat gumpalan sel pus?</label>
+                <select class="form-control" id="pus_cell_clumps" name="pus_cell_clumps" required>
+                    <option hidden value="">Select</option>
+                    <option value="b" {% if input_data and input_data.pus_cell_clumps == 'b' %}selected{% endif %}>Ada</option>
+                    <option value="aTidak" {% if input_data and input_data.pus_cell_clumps == 'aTidak' %}selected{% endif %}>Tidak</option>
+                </select>
+                <label for="bacteria">Terdapat bakteri?</label>
+                <select class="form-control" id="bacteria" name="bacteria" required>
+                    <option hidden value="">Select</option>
+                    <option value="b" {% if input_data and input_data.bacteria == 'b' %}selected{% endif %}>Ada</option>
+                    <option value="aTidak" {% if input_data and input_data.bacteria == 'aTidak' %}selected{% endif %}>Tidak</option>
+                </select>
+                <div class="form-group">
+                    <label for="blood_glucose_random">Kadar gula darah acak:</label>
+                    <input type="number" class="form-control" id="blood_glucose_random" name="blood_glucose_random" required value="{{ input_data.blood_glucose_random if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label for="blood_urea">Urea darah:</label>
+                    <input type="number" class="form-control" id="blood_urea" name="blood_urea" required value="{{ input_data.blood_urea if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label for="serum_creatinine">Kreatinin serum:</label>
+                    <input type="number" class="form-control" id="serum_creatinine" name="serum_creatinine" required value="{{ input_data.serum_creatinine if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label for="sodium">Sodium/Natrium:</label>
+                    <input type="number" class="form-control" id="sodium" name="sodium" required value="{{ input_data.sodium if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label for="potassium">Potassium/Kalium:</label>
+                    <input type="number" class="form-control" id="potassium" name="potassium" required value="{{ input_data.potassium if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label for="haemoglobin">Jumlah hemoglobin:</label>
+                    <input type="number" class="form-control" id="haemoglobin" name="haemoglobin" required value="{{ input_data.haemoglobin if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label for="packed_cell_volume">Packed Cell Volume (PCV):</label>
+                    <input type="number" class="form-control" id="packed_cell_volume" name="packed_cell_volume" required value="{{ input_data.packed_cell_volume if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label for="white_blood_cell_count">Jumlah sel darah putih:</label>
+                    <input type="number" class="form-control" id="white_blood_cell_count" name="white_blood_cell_count" required value="{{ input_data.white_blood_cell_count if input_data else '' }}" step="0.001">
+                </div>
+                <div class="form-group">
+                    <label for="red_blood_cell_count">Jumlah sel darah merah:</label>
+                    <input type="number" class="form-control" id="red_blood_cell_count" name="red_blood_cell_count" required value="{{ input_data.red_blood_cell_count if input_data else '' }}" step="0.001">
+                </div>
+                <label for="hypertension">Terdapat hipertensi?</label>
+                <select class="form-control" id="hypertension" name="hypertension" required>
+                    <option hidden value="">Select</option>
+                    <option value="b" {% if input_data and input_data.hypertension == 'b' %}selected{% endif %}>Ada</option>
+                    <option value="aTidak" {% if input_data and input_data.hypertension == 'aTidak' %}selected{% endif %}>Tidak</option>
+                </select>
+                <label for="diabetes_mellitus">Terdapat diabetes mellitus?</label>
+                <select class="form-control" id="diabetes_mellitus" name="diabetes_mellitus" required>
+                    <option hidden value="">Select</option>
+                    <option value="b" {% if input_data and input_data.diabetes_mellitus == 'b' %}selected{% endif %}>Ada</option>
+                    <option value="aTidak" {% if input_data and input_data.diabetes_mellitus == 'aTidak' %}selected{% endif %}>Tidak</option>
+                </select>
+                <label for="coronary_artery_disease">Terdapat penyakit arteri koroner?</label>
+                <select class="form-control" id="coronary_artery_disease" name="coronary_artery_disease" required>
+                    <option hidden value="">Select</option>
+                    <option value="b" {% if input_data and input_data.coronary_artery_disease == 'b' %}selected{% endif %}>Ada</option>
+                    <option value="aTidak" {% if input_data and input_data.coronary_artery_disease == 'aTidak' %}selected{% endif %}>Tidak</option>
+                </select>
+                <label for="appetite">Nafsu makan?</label>
+                <select class="form-control" id="appetite" name="appetite" required>
+                    <option hidden value="">Select</option>
+                    <option value="Buruk" {% if input_data and input_data.appetite == 'Buruk' %}selected{% endif %}>Buruk</option>
+                    <option value="aBaik" {% if input_data and input_data.appetite == 'aBaik' %}selected{% endif %}>Baik</option>
+                </select>
+                <label for="peda_edema">Terdapat edema pedal?</label>
+                <select class="form-control" id="peda_edema" name="peda_edema" required>
+                    <option hidden value="">Select</option>
+                    <option value="b" {% if input_data and input_data.peda_edema == 'b' %}selected{% endif %}>Ada</option>
+                    <option value="aTidak" {% if input_data and input_data.peda_edema == 'aTidak' %}selected{% endif %}>Tidak</option>
+                </select>
+                <label for="anemia">Terdapat anemia?</label>
+                <select class="form-control" id="anemia" name="anemia" required>
+                    <option hidden value="">Select</option>
+                    <option value="b" {% if input_data and input_data.anemia == 'b' %}selected{% endif %}>Ada</option>
+                    <option value="aTidak" {% if input_data and input_data.anemia == 'aTidak' %}selected{% endif %}>Tidak</option>
+                </select>
+                  <p></p>
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <p></p>
+              </form>
+              {% if result != "none" %}
+                <div class="alert {% if result == 'Sehat' %}alert-success{% elif result == 'Sakit Ginjal' %}alert-danger{% else %}alert{% endif %}" style="text-align: center;">
+                  <strong style="font-size: 30px;">{{ result }}</strong><br>
+                  {{ out }}
+                </div>
+              {% endif %}
+          </div>
+      </div>
+  </div>
+
+    <footer class="site-footer bg-light">
+      <div class="container">
+          <div class="row pt-3 text-center">
+              <div class="col-md-12">
+                  <p><strong>KidneyTrackPlus (Kidney Failure Predict)</strong><br>
+                  Orbit Future Academy - Artificial Intelligence 4 Jobs<br>
+                  4 Sehat 5 Sempurna - Constellar</p>
+                  <div class="mt-3">
+                      <img src="../static/images/orbit.png" alt="University Logo" class="university-logo" width="80">
+                      <img src="../static/images/kampusmerd.png" alt="University Logo" class="university-logo" width="80">
+                      <img src="../static/images/unair.png" alt="University Logo" class="university-logo" width="80">
+                      <img src="../static/images/upn.png" alt="University Logo" class="university-logo" width="80">
+                      <img src="../static/images/jombang.png" alt="University Logo" class="university-logo" width="80">
+                      <img src="../static/images/semarang.png" alt="University Logo" class="university-logo" width="80">
+                  </div>
+              </div>
+          </div>
+          <div class="row pt-3 text-center">
+              <div class="col-md-12">
+                  <div class="border-top pt-3">
+                      <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> 4 Sehat 5 Sempurna Constellar</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    </div>
+
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/jquery-migrate-3.0.0.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.sticky.js"></script>
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <script src="../static/js/jquery.animateNumber.min.js"></script>
+    <script src="../static/js/jquery.fancybox.min.js"></script>
+    <script src="../static/js/jquery.stellar.min.js"></script>
+    <script src="../static/js/jquery.easing.1.3.js"></script>
+    <script src="../static/js/bootstrap-datepicker.min.js"></script>
+    <script src="../static/js/isotope.pkgd.min.js"></script>
+    <script src="../static/js/aos.js"></script>
+
+    <script src="../static/js/main.js"></script>
+
+  </body>
+
+</html>
+
